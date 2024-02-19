@@ -1,0 +1,36 @@
+// mixins.scss
+// 这里定义了一些Sass混合，用于跨项目共享的常见样式模式
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin respond-to($breakpoint) {
+    @if $breakpoint == mobile {
+      @media (max-width: $breakpoint-mobile) {
+        @content;
+      }
+    } @else if $breakpoint == tablet {
+      @media (max-width: $breakpoint-tablet) {
+        @content;
+      }
+    } @else if $breakpoint == desktop {
+      @media (max-width: $breakpoint-desktop) {
+        @content;
+      }
+    }
+  }
+  
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+  }
+  
+  // 示例使用混合的方式添加文本阴影
+  @mixin text-shadow($h-shadow, $v-shadow, $blur, $color) {
+    text-shadow: $h-shadow $v-shadow $blur $color;
+  }
+  

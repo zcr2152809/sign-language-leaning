@@ -1,0 +1,25 @@
+// variables.scss
+// 这里定义了一些可以在项目中重用的Sass变量
+
+// 颜色
+$primary-color: #3498db; // 主色
+$secondary-color: #2ecc71; // 辅助色
+$accent-color: #9b59b6; // 强调色
+$white: #ffffff;
+$black: #000000;
+$grey: #7f8c8d;
+$light-grey: #ecf0f1;
+$dark-grey: #34495e;
+
+// 字体
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-stack-serif: 'Georgia', 'Times New Roman', Times, serif;
+
+// 布局
+$container-width: 1200px;
+$gutter-width: 30px;
+
+// 响应式断点
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
